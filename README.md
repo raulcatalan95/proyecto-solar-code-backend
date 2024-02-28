@@ -19,3 +19,21 @@ spring.user.datasource.driver-class-name=com.mysql.jdbc.driver
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
 spring.jpa.properties.hibernate.format_sql=true
 ```
+
+### CORS
+
+```Java
+@Configuration
+	public static class Myconfiguration{
+		@Bean
+		public WebMvcConfigurer corsConfigurer(){
+			return new WebMvcConfigurer() {
+				@Override
+				public void addCorsMappings(CorsRegistry registry) {
+					registry.addMapping("/**")
+							.allowedMethods("HEAD", "GET", "PUT", "POST", "DELETE", "PATCH");
+				}
+			};
+		}
+	}
+```
