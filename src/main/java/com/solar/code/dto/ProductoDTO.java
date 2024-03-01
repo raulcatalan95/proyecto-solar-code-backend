@@ -7,6 +7,7 @@ public class ProductoDTO {
   private Long producto_id;
   private Long categoria_id;
   private String nombre;
+  private double precio;
   private String marca;
   private String descripcion;
   private String imagen;
@@ -24,6 +25,7 @@ public class ProductoDTO {
     producto.setFicha_tecnica(productoDTO.getFicha_tecnica());
     producto.setSku(productoDTO.getSku());
     producto.setStock(productoDTO.getStock());
+    producto.setPrecio(productoDTO.getPrecio());
     return producto;
   }
 
@@ -32,6 +34,14 @@ public class ProductoDTO {
   }
   public void setProducto_id(Long producto_id) {
     this.producto_id = producto_id;
+  }
+
+  public double getPrecio() {
+    return precio;
+  }
+
+  public void setPrecio(double precio) {
+    this.precio = precio;
   }
 
   public Long getCategoria_id() {
