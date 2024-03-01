@@ -19,7 +19,7 @@ public class Producto {
   private String marca;
   @Column(length = 2000)
   private String descripcion;
-  @Column
+  @Column(length = 25000)
   private String imagen;
   @Column
   private String ficha_tecnica;
