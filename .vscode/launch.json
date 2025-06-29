@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-CodeApplication<code>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.solar.code.CodeApplication",
+            "projectName": "code",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
