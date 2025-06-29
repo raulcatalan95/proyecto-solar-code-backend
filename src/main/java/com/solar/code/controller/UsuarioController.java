@@ -1,8 +1,10 @@
 package com.solar.code.controller;
 
+import com.solar.code.dto.UsuarioAuthResponseDTO;
 import com.solar.code.model.Usuario;
 import com.solar.code.service.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -16,8 +18,13 @@ public class UsuarioController {
     private UsuarioService usuarioService;
 
     @PostMapping("/autenticar")
-    public Usuario autenticarUsuario(@RequestBody Usuario usuario) {
-        return usuarioService.autenticarUsuario(usuario.getRutUsuario(), usuario.getClave());
+    public ResponseEntity<?> autenticarUsuario(@RequestBody Usuario usuario) {
+        var result = usuarioService.autenticarUsuario(usuario.getRutUsuario(), usuario.getClave());
+        if (result.isPresent()) {
+            return ResponseEntity.ok(result.get());
+        } else {
+            return ResponseEntity.status(401).body("Credenciales inválidas");
+        }
     }
 
     @PostMapping("/guardar")
