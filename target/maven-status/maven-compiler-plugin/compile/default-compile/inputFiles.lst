@@ -1,4 +1,5 @@
 C:\Users\basti\proyecto-solar-code-backend\src\main\java\com\solar\code\service\GastoComunService.java
+C:\Users\basti\proyecto-solar-code-backend\src\main\java\com\solar\code\model\Multa.java
 C:\Users\basti\proyecto-solar-code-backend\src\main\java\com\solar\code\service\ProductoService.java
 C:\Users\basti\proyecto-solar-code-backend\src\main\java\com\solar\code\controller\GastoComunController.java
 C:\Users\basti\proyecto-solar-code-backend\src\main\java\com\solar\code\repository\GastoComunRepository.java
@@ -8,17 +9,20 @@ C:\Users\basti\proyecto-solar-code-backend\src\main\java\com\solar\code\model\Ca
 C:\Users\basti\proyecto-solar-code-backend\src\main\java\com\solar\code\repository\CategoriaRepository.java
 C:\Users\basti\proyecto-solar-code-backend\src\main\java\com\solar\code\dto\GastoComunDTO.java
 C:\Users\basti\proyecto-solar-code-backend\src\main\java\com\solar\code\repository\DepartamentoRepository.java
+C:\Users\basti\proyecto-solar-code-backend\src\main\java\com\solar\code\dto\MultaDTO.java
 C:\Users\basti\proyecto-solar-code-backend\src\main\java\com\solar\code\repository\ProductoRepository.java
 C:\Users\basti\proyecto-solar-code-backend\src\main\java\com\solar\code\controller\ProductoController.java
 C:\Users\basti\proyecto-solar-code-backend\src\main\java\com\solar\code\controller\CategoriaController.java
 C:\Users\basti\proyecto-solar-code-backend\src\main\java\com\solar\code\model\Producto.java
 C:\Users\basti\proyecto-solar-code-backend\src\main\java\com\solar\code\dto\DepartamentoDTO.java
 C:\Users\basti\proyecto-solar-code-backend\src\main\java\com\solar\code\model\Departamento.java
+C:\Users\basti\proyecto-solar-code-backend\src\main\java\com\solar\code\repository\MultaRepository.java
 C:\Users\basti\proyecto-solar-code-backend\src\main\java\com\solar\code\controller\BilleteraController.java
 C:\Users\basti\proyecto-solar-code-backend\src\main\java\com\solar\code\CodeApplication.java
 C:\Users\basti\proyecto-solar-code-backend\src\main\java\com\solar\code\repository\BilleteraRepository.java
 C:\Users\basti\proyecto-solar-code-backend\src\main\java\com\solar\code\service\UsuarioService.java
 C:\Users\basti\proyecto-solar-code-backend\src\main\java\com\solar\code\model\GastoComun.java
+C:\Users\basti\proyecto-solar-code-backend\src\main\java\com\solar\code\controller\MultaController.java
 C:\Users\basti\proyecto-solar-code-backend\src\main\java\com\solar\code\controller\UsuarioController.java
 C:\Users\basti\proyecto-solar-code-backend\src\main\java\com\solar\code\dto\UsuarioAuthResponseDTO.java
 C:\Users\basti\proyecto-solar-code-backend\src\main\java\com\solar\code\service\CategoriaService.java
