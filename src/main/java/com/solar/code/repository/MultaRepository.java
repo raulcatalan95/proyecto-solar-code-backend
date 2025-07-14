@@ -8,5 +8,6 @@ import java.util.List;
 
 @Repository
 public interface MultaRepository extends JpaRepository<Multa, Long> {
-    List<Multa> findByDepartamentoId(Long departamentoId);
+   List<Multa> findByDepartamentoIdDepartamento(Integer idDepartamento);
+
 }

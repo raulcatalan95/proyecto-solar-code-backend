@@ -17,13 +17,14 @@ public class MultaController {
     @Autowired
     private MultaRepository multaRepository;
 
-    @GetMapping("/por-departamento/{id}")
-    public List<MultaDTO> getMultasPorDepartamento(@PathVariable Long id) {
-        List<Multa> multas = multaRepository.findByDepartamentoId(id);
-        return multas.stream()
-                .map(m -> new MultaDTO(m.getId(), m.getDescripcion(), m.getMonto(), m.getEstado(), m.getFecha()))
-                .collect(Collectors.toList());
-    }
+ @GetMapping("/por-departamento/{id}")
+public List<MultaDTO> getMultasPorDepartamento(@PathVariable Integer id) {
+    List<Multa> multas = multaRepository.findByDepartamentoIdDepartamento(id);
+    return multas.stream()
+            .map(m -> new MultaDTO(m.getId(), m.getDescripcion(), m.getMonto(), m.getEstado(), m.getFecha()))
+            .collect(Collectors.toList());
+}
+
 
     // Puedes agregar más endpoints aquí
 }

@@ -1,3 +1,40 @@
-# Default ignored files
-/shelf/
-/workspace.xml
+# Archivos generados por Maven
+/target/
+
+# Logs
+*.log
+
+# Archivos temporales de compilación
+*.class
+
+# Archivos de configuración del IDE
+/.idea/
+/*.iml
+*.ipr
+*.iws
+
+# Archivos de Eclipse
+.project
+.classpath
+.settings/
+
+# Archivos de NetBeans
+/nbproject/private/
+/build/
+/dist/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos temporales
+*.swp
+*.bak
+*.tmp
+
+# Archivos de test coverage
+*.exec
+jacoco.exec
+
+# Archivos generados por VSCode
+.vscode/
