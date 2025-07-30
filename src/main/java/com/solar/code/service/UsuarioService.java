@@ -42,7 +42,6 @@ public class UsuarioService {
                 ))
                 .collect(Collectors.toList());
 
-        // Obtener saldo de la billetera virtual (puedes ajustar si hay más de una billetera)
         BilleteraVirtual billetera = billeteraVirtualRepository.findByUsuario_RutUsuario(rutUsuario)
                 .stream()
                 .findFirst()
@@ -54,11 +53,8 @@ public class UsuarioService {
                 usuario.getCorreo(),
                 departamentos
         );
-        if (billetera != null) {
-            dto.setSaldoBilletera(billetera.getSaldo());
-        } else {
-            dto.setSaldoBilletera(BigDecimal.ZERO);
-        }
+        dto.setSaldoBilletera(billetera != null ? billetera.getSaldo() : BigDecimal.ZERO);
+
         return Optional.of(dto);
     }
 

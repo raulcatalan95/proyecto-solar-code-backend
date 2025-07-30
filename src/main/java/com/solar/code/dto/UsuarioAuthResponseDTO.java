@@ -8,23 +8,18 @@ public class UsuarioAuthResponseDTO {
     private String nombre;
     private String correo;
     private List<DepartamentoDTO> departamentos;
-    private BigDecimal saldoBilletera; // Nuevo campo
+    private BigDecimal saldoBilletera;
 
     public UsuarioAuthResponseDTO() {}
 
-    public UsuarioAuthResponseDTO(String rutUsuario, String nombre, String correo, List<DepartamentoDTO> departamentos, BigDecimal saldoBilletera) {
+    public UsuarioAuthResponseDTO(String rutUsuario, String nombre, String correo, List<DepartamentoDTO> departamentos) {
         this.rutUsuario = rutUsuario;
         this.nombre = nombre;
         this.correo = correo;
         this.departamentos = departamentos;
-        this.saldoBilletera = saldoBilletera;
     }
 
-    public UsuarioAuthResponseDTO(String rutUsuario2, String nombre2, String correo2,
-            List<DepartamentoDTO> departamentos2) {
-        //TODO Auto-generated constructor stub
-    }
-
+    // getters y setters
     public String getRutUsuario() { return rutUsuario; }
     public void setRutUsuario(String rutUsuario) { this.rutUsuario = rutUsuario; }
     public String getNombre() { return nombre; }
